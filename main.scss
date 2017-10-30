@@ -1,0 +1,87 @@
+// VARIAVEIS
+// ===============================================
+
+$max-card-width: 200px;
+$shadow-color: #ddd;
+$light-color: #fff;
+$background-color: #fbfbfb;
+
+$primary-color: blueviolet;
+$secondary-color: darkmagenta;
+$text-color: midnightblue;
+
+// SCSS
+// ===============================================
+
+html {
+  font-family: sans-serif;
+  font-size: 1rem;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+nav {
+  background-color: $secondary-color;
+  padding: 12px;
+  margin: -8px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+
+  a {
+    text-decoration: none;
+    color: $light-color;
+    font-weight: bold;
+  }
+}
+
+h2 {
+  text-align: center;
+  margin: 64px 0px;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 8px;
+
+  .card {
+    max-width: $max-card-width;
+    height: auto;
+    border: 1px solid $shadow-color;
+    box-shadow: 2px 2px 2px 0px $shadow-color;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: $light-color;
+  
+    a {
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    p {
+      font-size: .9rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: left;
+      list-style: none;
+      padding: 0px;
+    
+      a {
+        padding: 2px 8px;
+        color: white;
+        border-radius: 10px;
+        margin: 2px;
+        font-size: 0.75rem;
+        background-color: $secondary-color;
+      }
+    }
+  }
+}
+
+
+
