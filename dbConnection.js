@@ -1,5 +1,5 @@
 
-module.exports = function() {
+module.exports = function() {  
   var mysql = require("mysql");
   
   var conn = mysql.createConnection({
