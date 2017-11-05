@@ -20,7 +20,6 @@ module.exports = function() {
         console.log(" [ERRO] Erro ao selecionar cards\n");
         throw err;
       }
-      console.log(result.length);
     });
   });
 }
