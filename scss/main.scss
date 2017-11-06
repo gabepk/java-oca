@@ -49,6 +49,7 @@ h2 {
   .card {
     max-width: $max-card-width;
     height: auto;
+    margin: 8px;
     border: 1px solid $shadow-color;
     box-shadow: 2px 2px 2px 0px $shadow-color;
     padding: 12px;

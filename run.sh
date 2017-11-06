@@ -1,5 +1,5 @@
 #!/bin/bash
-scss public/scss/main.scss public/css/main.css
+scss scss/main.scss public/css/main.css
 npm init --yes
 
 npm install mysql -S
@@ -19,4 +19,4 @@ echo "-------"
 echo " "
 echo "Listening on: http://localhost:8080/"
 
-node main.js 
+node server.js 

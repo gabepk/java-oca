@@ -23,18 +23,19 @@
 
     <!-- ============ MEUS CARDS ============ -->
     <div class="container">
-      
-      <div id="card-0" class="card" style="display:none">
-        <a href="#">Variáveis Locais</a>
-        <p>Variáveis Locais Variáveis Locais Variáveis Locais Variáveis Locais
-            Variáveis Locais Variáveis Locais Variáveis Locais Variáveis Locais.
-        </p>
-        <div class="tags">
-          <a href="#">Capítulo 1</a>
-          <a href="#">Variável</a>
-        </div>
-      </div>
+      <% cards.forEach(function(card) { %>
 
+        <div class="card">
+          <a href="#"><%= card.title %></a>
+          <p><%= card.description %></p>
+          <div class="tags">
+            <% card.tags.forEach(function(tag) { %>
+              <a href="#"><%= tag %></a>
+            <% }); %>
+          </div>
+        </div>
+
+      <% }); %>
     </div>
 
     <script src="js/main.js"></script>

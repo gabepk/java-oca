@@ -28,6 +28,7 @@ h2 {
   .container .card {
     max-width: 200px;
     height: auto;
+    margin: 8px;
     border: 1px solid #ddd;
     box-shadow: 2px 2px 2px 0px #ddd;
     padding: 12px;
